@@ -7,79 +7,91 @@ body {
   overflow-x: hidden;
 }
 
-/* titles */
-h1, .h1 { font-family: Arial; font-size: 35px; color: #f2f2f2; }
-h2, .h2 { font-family: Courier; font-size: 30px; color: #f2f2f2; }
-h3, .h3 { font-family: sans-serif; font-size: 45px; }
+/* titles with strong shadows */
+h1, .h1 { 
+  font-family: Arial; 
+  font-size: 35px; 
+  color: #f2f2f2; 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+h2, .h2 { 
+  font-family: Courier; 
+  font-size: 30px; 
+  color: #f2f2f2; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+h3, .h3 { 
+  font-family: sans-serif; 
+  font-size: 45px; 
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
 h4, .h4 {
   font-family: Courier; font-size: 35px;
   padding-right: 13%; padding-left: 13%;
   color: #f2f2f2;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
 
-/* text */
-p, .p {
+/* text with strong shadows */
+p, .p, dt {
   font-family: Tahoma; font-size: 23px;
   padding-right: 13%; padding-left: 13%;
   color: #f2f2f2;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), 0px 0px 8px rgba(0, 0, 0, 0.4); 
 }
 
 /* shadow glow effect */
 .glow-text {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(130, 76, 175, 0.2);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.669), 0 0 20px rgba(130, 76, 175, 0.2);
 }
 
-/* small titles */
+/* Modern Transparent Section Titles */
 #Me {
   text-align: center !important;
   left: 12%;
-  border-radius: 5px;
-  color: #000000;
-  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  color: #ffffff; 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 40px;
   font-family: verdana, 'open sans', sans-serif;
-  padding: 10px 14px 10px 8px;
+  padding: 10px 24px;
   position: relative;
-  box-shadow: 0px 1px 5px #999;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   width: fit-content;
   white-space: nowrap;
   vertical-align: middle;
 }
 
-/* grey container */
-#Mi {
+/* Modern Transparent Containers */
+#Mi, #Mo {
   text-align: center !important;
   left: 12%;
-  border-radius: 5px;
-  color: #000000;
-  background-color: rgb(168, 168, 168);
+  border-radius: 15px;
+  color: #f2f2f2;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 40px;
   font-family: verdana, 'open sans', sans-serif;
-  padding: 10px 14px 10px 8px;
+  padding: 30px 20px;
   position: relative;
-  box-shadow: 0px 1px 5px #999;
-  max-width: 75%;
-  vertical-align: middle;
-}
-
-/* white container */
-#Mo {
-  text-align: center !important;
-  left: 12%;
-  border-radius: 5px;
-  color: #000000;
-  background-color: rgb(255, 255, 255);
-  font-size: 40px;
-  font-family: verdana, 'open sans', sans-serif;
-  padding: 10px 14px 10px 8px;
-  position: relative;
-  box-shadow: 0px 1px 5px #999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   max-width: 75%;
   vertical-align: middle;
 }
 
 /* face pic */
-.image { padding-right: 12%; float: right; }
+.image { 
+    padding-right: 12%; 
+    float: right; 
+    position: relative;
+    z-index: 10; /* Ensures the whole image block is on top */
+}
 
 /* topnav */
 .topnav {
@@ -144,6 +156,15 @@ p, .p {
   z-index: 10;
 }
 
+/* Thin long horizontal lines between sections */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    margin: 60px 13%; 
+    display: block;
+}
+
 /* page block */
 .vg-page {
   position: relative;
@@ -166,11 +187,10 @@ p, .p {
   z-index: -1;
 }
 
-/* desktop colors */
+/* desktop override adjustments */
 @media (min-width: 1001px) {
-  #Me { background-color: azure; box-shadow: 0px 1px 5px #505050; }
-  #Mi { background-color: rgb(61, 61, 61); box-shadow: 0px 1px 5px #505050; color: #f2f2f2; }
-  #Mo { background-color: rgb(54, 54, 54); box-shadow: 0px 1px 5px rgb(0, 0, 0); color: #f2f2f2; }
+  #Me { background: rgba(255, 255, 255, 0.15); }
+  #Mi, #Mo { background: rgba(255, 255, 255, 0.07); }
 }
 
 /* mobile fixes */
@@ -181,9 +201,6 @@ p, .p {
     margin-right: auto !important;
     max-width: 90% !important;
   }
-
-  #Mi { background-color: rgb(61, 61, 61) !important; color: #f2f2f2 !important; }
-  #Mo { background-color: rgb(54, 54, 54) !important; color: #f2f2f2 !important; }
 
   .topnav a {
     padding: 15px 8px !important;
@@ -214,14 +231,29 @@ p, .p {
   border-radius: 10px;
 }
 
-/* language text */
-.languages { font-family: Tahoma; font-size: 22px; padding-left: 13%; color: #f2f2f2; }
+/* --- Language Align Fix --- */
+.languages { font-family: Tahoma; font-size: 22px; color: #f2f2f2; }
 
-/* image text container */
-.img-with-text {
-  display: inline-block;
-  text-align: center;
-  margin: 5px;
+/* Using grid to align icons and text without changing your HTML structure */
+.languages dl {
+  display: grid;
+  grid-template-columns: 30px 1fr; /* First column for icons, second for text */
+  gap: 10px;
+  align-items: center;
+  padding-left: 13%;
+}
+
+.languages .icons {
+  float: none !important; /* Disabling the old float */
+  margin: 0 !important;
+  grid-column: 1;
+}
+
+.languages dt {
+  grid-column: 2;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: left;
 }
 
 /* caption */
@@ -231,6 +263,31 @@ p, .p {
   font-family: Tahoma;
   margin-top: 5px;
   padding: 0 !important;
+}
+
+/* Keep the box growth logic */
+#unfinished-section {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+}
+
+#unfinished-section.open {
+    max-height: 4000px;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+#unfinished-section .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+#unfinished-section.open .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ball list */
@@ -254,7 +311,6 @@ p, .p {
   border: 2px solid #999;
 }
 
-/* red ball hover */
 .ball:hover {
   transform: scale(1.1);
   box-shadow: 0px 6px 12px rgba(0,0,0,0.5);
@@ -262,7 +318,6 @@ p, .p {
   border-color: transparent;
 }
 
-/* purple ball hover */
 .ball2:hover {
   transform: scale(1.1);
   box-shadow: 0px 6px 12px rgba(0,0,0,0.5);
@@ -270,12 +325,10 @@ p, .p {
   border-color: transparent;
 }
 
-/* ball click */
 .ball:active, .ball2:active {
   transform: scale(0.95);
 }
 
-/* ball images */
 .ball img, .ball2 img { 
   max-width: 60%; 
   max-height: 60%; 
@@ -287,7 +340,6 @@ p, .p {
   scroll-margin-top: 70px;
 }
 
-/* smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -308,14 +360,88 @@ html {
   box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
 }
 
-/* button hover */
 .toggle-btn:hover {
   background-color: #704494;
   transform: scale(1.05);
   box-shadow: 0px 6px 12px rgba(0,0,0,0.4);
 }
 
-/* button click */
 .toggle-btn:active {
   transform: scale(0.98);
+}
+
+/* scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer Style */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: #888;
+    font-family: Tahoma;
+    margin-top: 50px;
+}
+
+/* Simple Static Email Box */
+.email-box {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 8px 25px;
+    border-radius: 50px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.email-text {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #fff;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+/* --- ADDITIONS FOR FUN FACTS --- */
+.fact-wrapper {
+    display: block;
+    clear: both; 
+    margin-top: 30px;
+    position: relative;
+    z-index: 999; /* Higher z-index ensures it catches the click */
+}
+
+.fact-container-right {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    background: rgba(130, 76, 175, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.fact-container-right.open {
+    max-height: 500px;
+    opacity: 1;
+    padding: 15px;
+}
+
+.fact-container-right p {
+    padding: 0 !important;
+    margin: 5px 0 !important;
+    font-size: 18px;
+    text-shadow: none;
 }

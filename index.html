@@ -28,77 +28,106 @@
 </div>
 
 <div id="about"></div>
-<h1 id="Me">Who am I?</h1>
-<p>My name is Jesse Timonen. I am a 19 year old guy [Born 2006] from Oulu, Finland. As a person I am positive, flexible, and proactive. I also have a great sense of humour. </p>
-<p>I am interested in programming, but more interested in overall game/application/website design. I mainly use C# as a programming language but I also know HTML, CSS and Python.. and Javascript slightly.</p>
-<p>I like working as a team, though I can work alone perfectly fine too. Friends/people are important to me overall. </p>
-
-<div class="image">
-    <img src="Kuvat/naama3.jpg" width="400" height="200" alt="" />
-    <img src="Kuvat/naama2.jpg" width="250" height="300" alt="" />
-    <p class="small-caption">Yes, this image is scaled wrong on purpose, because funny</p>
+<h1 id="Me" class="reveal">Who am I?</h1>
+<div class="reveal">
+    <p>My name is Jesse Timonen. I am a 19 year old guy [Born 2006] from Oulu, Finland. As a person I am positive, flexible, and proactive. I also have a great sense of humour. </p>
+    <p>I am interested in programming, but more interested in overall game/application/website design. I mainly use C# as a programming language but I also know HTML, CSS and Python.. and Javascript slightly.</p>
+    <p>I like working as a team, though I can work alone perfectly fine too. Friends/people are important to me overall. </p>
 </div>
 
+<div class="image reveal">
+    <img src="Kuvat/naama2.jpg" width="400" height="200" alt="" />
+    <img src="Kuvat/naama.jpg" width="250" height="300" alt="" />
+    <p class="small-caption">Yes, this image is scaled wrong on purpose, because funny</p>
+    
+    <div class="fact-wrapper">
+        <button onclick="toggleFacts()" class="toggle-btn" id="factBtn" style="width: 100%; font-size: 18px; padding: 10px;">
+            Show Fun/Other Facts about me
+        </button>
+        <div id="fact-section" class="fact-container-right">
+            <p>- I eat chicken torillas weekly.</p>
+            <p>- I listen to a large variety of music genres, but mostly metal/rock.</p>
+            <p>- Breaking Bad is THE show of all time.</p>
+            <p>- My favourite color is purple [and green].</p>
+        </div>
+    </div>
+</div>
 <br>
-<div class="languages" >
-    <h1>Languages</h1>
-<dl>
-    <img style="border:2px solid black;float:left" src="Kuvat/fi.png" class="icons" height="15px" width="20px">
-    <dt>Finnish</dt> 
+<div class="languages reveal">
+    <dl>
+    <h1 class="glow-text">Languages</h1>
+    <img style="border:2px solid black;float:left" src="Kuvat/fi.png" class="icons" height="20px" width="25px">
+    <dt>Finnish - Native language</dt> 
     <dt>-Fluent speaking and understanding</dt> <br>
-    <img style="border:2px solid black;float:left" src="Kuvat/eng.png" class="icons" height="15px" width="20px">
+    <img style="border:2px solid black;float:left" src="Kuvat/eng.png" class="icons" height="20px" width="25px">
     <dt>English</dt>
     <dt>-Decent speaking and fluent understanding</dt> <br>
-    <img style="border:2px solid black;float:left" src="Kuvat/sw.png" class="icons" height="15px" width="20px">
+    <img style="border:2px solid black;float:left" src="Kuvat/sw.png" class="icons" height="20px" width="25px">
     <dt>Swedish</dt>
     <dt>-Slightly speak and understand</dt> <br>
-    <img style="border:2px solid black;float:left" src="Kuvat/sp.png" class="icons" height="15px" width="20px">
+    <img style="border:2px solid black;float:left" src="Kuvat/sp.png" class="icons" height="20px" width="25px">
     <dt>Spanish [Studying]</dt>
     <dt>-Slightly speak and understand</dt>
 </dl>
 </div>
-
 <br>
+<hr class="section-divider">
 <div id="hobbies"></div>
-<h1 id="Me">Hobbies</h1>
-<p>- Playing a lot of videogames, sometimes also making them too. </p>
-<p>- Playing drums for fun on my free time.</p>
-<p>- Digital drawing on my computer. I love to draw my favourite videogame- or show characters, also original characters. </p>
-<p>- Watching a lot of Youtube videos, sometimes making them too. I like doing videoediting overall.</p>
-<p>- 3D modeling stuff with Blender.</p>
-<br>
+<h1 id="Me" class="reveal">Hobbies</h1>
+<div class="reveal">
+    <p>- Playing videogames, also making them too. </p>
+    <p>- Playing the drums for fun on my free time.</p>
+    <p>- Digital drawing on my computer using a drawing tablet.</p>
+    <p>- Watching Youtube videos, sometimes making them too. I like doing videoediting overall.</p>
+    <p>- Cooking food.</p>
+    <p>- 3D modeling stuff with Blender.</p>
+</div>
+<hr class="section-divider">
 <div id="education"></div>
-<h1 id="Me">Education</h1>
-<p>[Coming up] University of Applied Sciences - OAMK (2026 - ?) To be updated..</p>
-<p>Vocational school - OSAO Kaukovainio (2022-2025). Developer, information and communication technology.</p>
-<p>Basic school - Oulunsalon Kirkonkylän- ja Pitkäkankaan koulu.</p>
-<p>I took drum lessons once in a week for a couple of years.</p>
-<br>
+<h1 id="Me" class="reveal">Education</h1>
+<div class="reveal">
+    <p>[Coming up] University of Applied Sciences - OAMK (2026 - ?) To be updated..</p>
+    <p>Vocational school - OSAO Kaukovainio (2022-2025). Developer, information and communication technology.</p>
+    <p>Basic school - Oulunsalon Kirkonkylän- and Pitkäkankaan koulu.</p>
+    <p>I took drum lessons once in a week for a couple of years.</p>
+</div>
 
+<hr class="section-divider">
 <div id="workexperience"></div>
-<h1 id="Me">Work Experience</h1>
-<p>Check the downloadable CV for more information about my jobs and interests.</p>
-<h4 class="glow-text">Retail - Limingantullin Prisma</h4>
-<p>I have been working in Prisma many times, couple of summers doing summer jobs and the junior highschool work practice programs (TET).</p>
-<p>I did my job well and I was always invited back.</p><br>
-<h4 class="glow-text">University of Oulu | 2024-2025</h4>
-<p>I was working on a few Unity prototype-like projects, including programming and designing. I also modeled stuff with Blender, and 3D printed one of the them. The employer really liked all of my work.</p>
-<h4 class="glow-text">OSAO Kaukovainio, Civilian Service | 2025-2026</h4>
-<p>Currently ongoing.. To be updated.</p>
+<h1 id="Me" class="reveal">Work Experience</h1>
+<p class="reveal">Check the downloadable CV for more information about my jobs and interests.</p>
+
+<div class="reveal">
+    <h4 class="glow-text">Retail - Limingantullin Prisma</h4>
+    <p>I have been working in Prisma many times, couple of summers doing summer jobs and the junior highschool work practice programs (TET).</p>
+    <p>I did my job well and I was always invited back.</p><br>
+</div>
+
+<div class="reveal">
+    <h4 class="glow-text">University of Oulu | 2024-2025</h4>
+    <p>I did my vocational school internship here. I was working on a few Unity prototype-like projects, including programming and designing. I also modeled stuff with Blender, and 3D printed one of the them. The employer really liked all of my work.</p>
+</div>
+
+<div class="reveal">
+    <h4 class="glow-text">OSAO Kaukovainio, Civilian Service | 2025-2026</h4>
+    <p>Currently ongoing.. To be updated.</p>
+</div>
 <br>
   
+<hr class="section-divider">
 <div id="projects"></div>
-<h1 id="Me">My Projects</h1>
+<h1 id="Me" class="reveal">My Projects</h1>
 
 <div id="Mo">
     <br>
-    <div id="Mi">
-        <h4>VR Game - Prison Breakout VR</h4>
+    <div id="Mi" class="reveal">
+        <h4 class="glow-text">VR Game - Prison Breakout VR</h4>
+        <p class="glow-text">[Made during vocational school]</p>
         <p>Our VR game is a jailbreak escape room. The aim of the game is to complete puzzles and escape the prison in less than 15 minutes. The puzzles have the right amount of difficulty and variety to make the game suitable for everyone.</p>
-        <p>We made this game in a three person group. I was in charge of designing and doing almost the entire map, and the win/lose screen. The game was presented in the Vectorama event in Oulu, where people could come and try the game out.</p>
+        <p>We made this game in a three person group. I was in charge of designing and doing almost the entire map, and the win/lose scenes. The game was presented in the Vectorama event in Oulu, where people could come and try the game out.</p>
         <img src="Kuvat/boster.png" width="280" height="400"/>
         <img src="Kuvat/boster2.png" width="280" height="400"/>
-        <h1>Video Trailers</h1>
+        <h1 class="glow-text">Video Trailers</h1>
         <video width="480" height="270" controls autoplay>
             <source src="VRGameAd.mp4" type="video/mp4">
         </video>
@@ -107,30 +136,32 @@
         </video>
     </div>
     <br>
-    <div id="Mi">
-        <h4>Portfolio</h4>
-        <p>I have made a portfolio website of myself, and it is the one that you're currently reading. I made it with HTML and CSS.</p>
+    <div id="Mi" class="reveal">
+        <h4 class="glow-text">Website - Portfolio</h4>
+        <p class="glow-text">[Started making during vocational school]</p>
+        <p>I have made a portfolio website of myself, designed entirely by me. It is the one that you're currently reading. I made it with HTML and CSS from scratch!</p>
     </div>
     <br>
-    <div id="Mi">
-        <h4>VR Game - Prison Breakout VR 2</h4>
+    <div id="Mi" class="reveal">
+        <h4 class="glow-text">VR Game - Prison Breakout VR 2</h4>
         <p>I started making a sequel of our VR Escaperoom game, and it's still in the making, just in a very early state. The idea of the game is very similar to the first game, but the game will be longer and more versatile.</p>
         <img src="Kuvat/prison.png" width="280" height="150"/>
         <img src="Kuvat/keydoor.png" width="200" height="150"/>
         <img src="Kuvat/prisoncells.png" width="280" height="150"/>
     </div>
     <br>
-    <button onclick="toggleUnfinished()" class="toggle-btn" id="toggleBtn">
+    <button onclick="toggleUnfinished()" class="toggle-btn reveal" id="toggleBtn">
         Show Unfinished Projects
     </button>
 
-    <div id="unfinished-section" style="display: none;">
-        <h4>The following projects are prototype games that aren't finished.</h4>
-        <h4>I still want to mention them regardless.</h4>
+    <div id="unfinished-section">
+        <h4 class="reveal">The following projects are prototype games that aren't finished.</h4>
+        <h4 class="reveal">I still want to mention them regardless.</h4>
         <br>
         
-        <div id="Mi">
-            <h4>Gun Guy Zombies</h4>
+        <div id="Mi" class="reveal">
+            <h4 class="glow-text">Gun Guy Zombies</h4>
+            <p class="glow-text">[Was in the making during vocational school]</p>
             <p>Gun Guy Zombies is a 3D horror first person shooter made with Unity. The player has to go through a forest full of zombies while following a path to the end. We were making this game as a three person group. I was in charge of designing and doing the entire map and some small details.</p>
             <img src="Kuvat/gunguyZ1.png" width="280" height="150"/>
             <img src="Kuvat/gunguyZ2.png" width="280" height="150"/>
@@ -138,18 +169,20 @@
         </div>
         <br>
         
-        <div id="Mi">
-            <h4>Gun Guy RPG&nbsp;</h4>
+        <div id="Mi" class="reveal">
+            <h4 class="glow-text">Gun Guy RPG&nbsp;</h4>
+            <p class="glow-text">[Was in the making during vocational school]</p>
             <p>Gun Guy RPG is an top down 2D rpg style game made with Unity, where the player goes trough the island, fighting zombies and enemies in a turn based combat style. The player can find money and spend it in stores to buy better equipment.</p>
+            <img src="Kuvat/platformericon.png" width="150" height="150"/>
             <img src="Kuvat/rpg1.png" width="280" height="150"/>
             <img src="Kuvat/rpg2.png" width="280" height="150"/>
-            <img src="Kuvat/rpg3.png" width="280" height="150"/>
         </div>
         <br>
         
-        <div id="Mi">
-            <h4>PaintBall!</h4>
-            <p>PaintBall! is a 5 man made multiplayer fps gamemade with Unreal Engine, where the players fight eachother with paintballguns in different gamemodes and team sizes. We had a preview alpha version of the game in the Vectorama event.</p>
+        <div id="Mi" class="reveal">
+            <h4 class="glow-text">PaintBall!</h4>
+            <p class="glow-text">[Was in the making during vocational school]</p>
+            <p>PaintBall! is a 5 man made multiplayer fps game made with Unreal Engine, where the players fight eachother with paintballguns in different gamemodes and team sizes. We had a preview alpha version of the game in the Vectorama event.</p>
             <img src="Kuvat/LoadingForest.png" width="320" height="180"/>
             <img src="Kuvat/officeMapImage.png" width="320" height="180"/>
             <img src="Kuvat/PaintballPoster.png" width="160" height="230"/>
@@ -161,36 +194,81 @@
 <br><br><br><br><br>
 <div id="contact"></div>
 <div class="contact">
-<center>
-    <h2>Socials & Contacts</h2> 
+<center class="reveal">
+    <h2 class="glow-text">Socials & Contacts</h2> 
     <div class="balls">
         <div class="ball"><a href="https://www.youtube.com/@turtelmies203"><img src="Kuvat/yt.png" alt="YouTube"></a></div>
         <div class="ball2"><a href="https://www.instagram.com/turtelmies/"><img src="Kuvat/ig.png" alt="Instagram"></a></div>
     </div>
-    <p>jessej.timonen@gmail.com</p>
     <br>
+    <div class="email-box">
+        <p class="email-text">jessej.timonen@gmail.com</p>
+    </div>
+    <br><br>
     <h2>Download CV here:</h2>
     <a href="CV.pdf" download="Jesse Timonen CV">
-        <button class="toggle-btn" id="toggleBtn">Download CV</button>
+        <button class="toggle-btn">Download CV</button>
     </a>
 </center>
 </div>
 <br><br><br><br>      
-    <p>Portfolio last updated:</p>
-    <p>[31.01.2026]</p>
-    <p>(DD.MM.YY)</p>
+<footer style="text-align: center; padding: 40px; background-color: #1a1a1a; color: #666; font-family: Tahoma;">
+<p>© 2026 Jesse Timonen | Built with HTML & CSS</p>
+<p style="font-size: 14px;">Last updated: 30.01.2026</p>
+</footer>
 
-<script> /* toggle logic */
+<script> /* Unfinished tab & smooth reveal*/
 function toggleUnfinished() {
     var section = document.getElementById("unfinished-section");
     var btn = document.getElementById("toggleBtn");
+    var internalItems = section.querySelectorAll('.reveal');
 
-    if (section.style.display === "none" || section.style.display === "") {
-        section.style.display = "block";
+    if (!section.classList.contains("open")) {
+        internalItems.forEach(item => item.classList.remove('active'));
+        section.classList.add("open");
         btn.innerHTML = "Hide Unfinished Projects";
+        
+        setTimeout(() => {
+            internalItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('active');
+                }, index * 100);
+            });
+        }, 300);
+        
     } else {
-        section.style.display = "none";
+        section.classList.remove("open");
         btn.innerHTML = "Show Unfinished Projects";
+        internalItems.forEach(item => item.classList.remove('active'));
+    }
+}
+
+window.addEventListener('scroll', reveal);
+function reveal() {
+  var reveals = document.querySelectorAll('.reveal');
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    if (revealTop < windowHeight - 80) {
+      var parent = reveals[i].closest('#unfinished-section');
+      if (!parent || parent.classList.contains('open')) {
+          reveals[i].classList.add('active');
+      }
+    }
+  }
+}
+reveal();
+
+function toggleFacts() {
+    var section = document.getElementById("fact-section");
+    var btn = document.getElementById("factBtn");
+
+    if (section.classList.contains("open")) {
+        section.classList.remove("open");
+        btn.innerHTML = "Show Fun/Other Facts about me";
+    } else {
+        section.classList.add("open");
+        btn.innerHTML = "Hide Fun/Other Facts about me";
     }
 }
 </script>
